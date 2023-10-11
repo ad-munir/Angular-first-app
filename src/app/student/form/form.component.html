@@ -1,0 +1,15 @@
+<form class="border p-2 m-5" [formGroup]="formStudent" (submit)="addStudent()" >
+  <div class="mb-3">
+    <label for="id" class="form-label">ID</label>
+    <input type="text" formControlName="id" class="form-control" id="id" placeholder="id">
+  </div>
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom</label>
+    <input type="text" formControlName="nom" class="form-control" id="nom" placeholder="nom">
+  </div>
+  <div class="mb-3">
+    <label for="note" class="form-label">Note</label>
+    <input type="text" formControlName="note" class="form-control" id="note" placeholder="note">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

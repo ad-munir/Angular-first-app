@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title">Student data deletion</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-describedby="modal-title"
+    (click)="modal.close('close')"
+  ></button>
+</div>
+<div class="modal-body">
+  <p>
+    <strong>Are you sure you want to delete ?</strong>
+  </p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-secondary" (click)="modal.close('cancel')">Cancel</button>
+  <button type="button" class="btn btn-danger" (click)="modal.close('ok')">Ok</button>
+</div>
